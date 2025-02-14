@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stickman Battle Game</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleScar Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="start-screen">
-    <h1>Stickman Battle Game</h1>
-    <p>Fight against enemies, upgrade your weapon, and become stronger!</p>
-    <button id="start-button">Start Game</button>
-  </div>
-
-  <div id="game-screen" style="display:none;">
+    <div id="menu">
+        <button id="startBtn">Start Game</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="restartBtn">Restart</button>
+        <button id="exitBtn">Exit</button>
+    </div>
     <canvas id="gameCanvas"></canvas>
-    <div id="score-board">
-      <span id="score">Score: 0</span>
-      <span id="health">Health: 100</span>
-    </div>
-    <div id="game-over" style="display:none;">
-      <h2>Game Over</h2>
-      <button id="restart-button">Restart</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
