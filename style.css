@@ -1,59 +1,58 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #2d2d2d;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: white;
-    font-family: Arial, sans-serif;
-  }
-  
-  #gameCanvas {
-    border: 2px solid white;
+    background-color: #181818;
+}
+
+canvas {
+    border: 2px solid #fff;
     background-color: #000;
-  }
-  
-  #hud {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+}
+
+#game-ui {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    color: white;
     font-size: 20px;
-  }
-  
-  #score, #health, #level {
-    margin-right: 20px;
-  }
-  
-  #start-screen {
-    position: absolute;
+}
+
+#game-over {
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    display: block;
-  }
-  
-  #start-screen button {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
     margin-top: 10px;
-    padding: 10px;
-    font-size: 18px;
-  }
-  
-  #game-over-screen {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: none;
-  }
-  
-  #game-over-screen button {
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 18px;
-  }
-  
+}
+
+button:hover {
+    background-color: #666;
+}
